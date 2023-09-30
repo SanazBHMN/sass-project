@@ -85,6 +85,19 @@ h4 {
   grid-gap: 1.5rem;
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: var(--container-color);
+  outline: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
 .button__header {
   display: none;
 }
@@ -97,21 +110,22 @@ h4 {
   left: 0;
   padding: 0.75rem 0;
 }
-.header .nav {
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .nav__logo {
+.nav__logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.header .nav__toggle {
+.nav__toggle {
   font-size: 1.5rem;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
-  .header .nav__menu {
+  .nav__menu {
     position: fixed;
     top: -100%;
     left: 0;
@@ -125,20 +139,29 @@ h4 {
     transition: 0.4s;
   }
 }
-.header .nav__list {
+.nav__list {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
-.header .nav__link, .header .nav__logo, .header .nav__title {
+.nav__link, .nav__logo, .nav__title {
   color: var(--title-color);
 }
-.header .nav .show-menu {
+.nav .show-menu {
   top: 4rem;
 }
 
+@media screen and (min-width: 767px) {
+  .nav__list {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .nav__toggle {
+    display: none;
+  }
+}
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 3rem;
@@ -151,6 +174,15 @@ h4 {
   }
   h4 {
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 95vw;
+  }
+  .button__header {
+    display: block;
+    padding: 0.5rem 1.5rem;
   }
 }
 
