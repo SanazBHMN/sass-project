@@ -15,17 +15,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">صفحه اصلی</a>
+              <a href="#home" class="nav__link active-link">صفحه اصلی</a>
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">درباره ما</a>
+              <a href="#about" class="nav__link">درباره ما</a>
             </li>
 
-            <li class="nav__item"><a href="#" class="nav__link">خدمات</a></li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">خدمات</a>
+            </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">ارتباط با ما</a>
+              <a href="#contact" class="nav__link">ارتباط با ما</a>
             </li>
 
             <i class="bi bi-toggle-off"></i>
@@ -40,7 +42,7 @@
       </nav>
     </header>
 
-    <section class="home section">
+    <section class="home section" id="home">
       <div class="home__container container">
         <article class="svg__img home__img">
           <img src="./images/1.svg" alt="home-image" />
@@ -62,7 +64,7 @@
       </div>
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
       <div class="about__container container">
         <article class="about__info">
           <h1 class="section__title">
@@ -81,6 +83,8 @@
         </article>
       </div>
     </section>
+
+    <section style="height: 160vh"></section>
 
     <script src="./js/app.js"></script>
   </body>

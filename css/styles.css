@@ -170,6 +170,20 @@ h4 {
   top: 4rem;
 }
 
+.active-link {
+  position: relative;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  bottom: -1rem;
+  left: 45%;
+  border-radius: 50%;
+  background-color: var(--title-color);
+}
+
 .scroll-header {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
