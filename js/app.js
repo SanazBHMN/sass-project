@@ -1,5 +1,6 @@
 const navMenu = document.querySelector("#nav-menu");
 const navToggle = document.querySelector("#nav-toggle");
+const navLink = document.querySelectorAll(".nav__link");
 
 // show menu
 navToggle.addEventListener("click", function () {
@@ -14,6 +15,12 @@ function scrollHeader() {
 }
 
 window.addEventListener("scroll", scrollHeader);
+
+// remove menu
+function linkAction() {
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((link) => link.addEventListener("click", linkAction));
 
 // scroll section active link
 const sections = document.querySelectorAll("section[id]");
