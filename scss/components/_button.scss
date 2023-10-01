@@ -15,4 +15,15 @@
   &__header {
     display: none;
   }
+
+  &-link {
+    background-color: var(--container-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--container-color);
+    }
+  }
 }

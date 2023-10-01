@@ -9,7 +9,8 @@
 
   .home__container,
   .about__container,
-  .support__container {
+  .support__container,
+  .services__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -70,5 +71,15 @@
       display: block;
       padding: 0.3rem 1.5rem;
     }
+  }
+
+  .home__container,
+  .about__container,
+  .support__container {
+    column-gap: 6rem;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
