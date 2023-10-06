@@ -11,7 +11,8 @@
   .about__container,
   .support__container,
   .services__container,
-  .app__container {
+  .app__container,
+  .contact__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -20,13 +21,12 @@
     order: 1;
   }
 
-  .app__title,
-  .app_description {
-    text-align: right;
-  }
-
   .about__info,
-  .support__info {
+  .support__info,
+  .app__title,
+  .app_description,
+  .contact__title,
+  .contact__description {
     text-align: right;
   }
 
@@ -93,5 +93,9 @@
 
   .services__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__container {
+    grid-template-columns: 3fr 1.5fr 1.25fr;
   }
 }
