@@ -17,6 +17,10 @@
     align-items: center;
   }
 
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .home__img {
     order: 1;
   }
@@ -97,5 +101,17 @@
 
   .contact__container {
     grid-template-columns: 3fr 1.5fr 1.25fr;
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__social {
+      &-link {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
